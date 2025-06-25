@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "furryKids-arm64-apple-macosx15.0-debug.exe": ["<furryKids-arm64-apple-macosx15.0-debug.exe>"]
+  "furryKids-arm64-apple-macosx15.0-debug.module": ["<furryKids-arm64-apple-macosx15.0-debug.module>"]
+  "main": ["<furryKids-arm64-apple-macosx15.0-debug.exe>","<furryKids-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<furryKids-arm64-apple-macosx15.0-debug.exe>","<furryKids-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/rockenlee/WorkSpace/furryKids/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids":
+    is-mutated: true
+commands:
+  "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids-entitlement.plist"]
+    description: "Write auxiliary file /Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids-entitlement.plist"
+
+  "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/rockenlee/WorkSpace/furryKids/Sources/main.swift"]
+    outputs: ["/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/sources"]
+    description: "Write auxiliary file /Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/sources"
+
+  "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/main.swift.o"]
+    outputs: ["/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.product/Objects.LinkFileList"
+
+  "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<furryKids-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<furryKids-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<furryKids-arm64-apple-macosx15.0-debug.exe>"]
+
+  "<furryKids-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/main.swift.o","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/Modules/furryKids.swiftmodule"]
+    outputs: ["<furryKids-arm64-apple-macosx15.0-debug.module>"]
+
+  "C.furryKids-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/main.swift.o","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.product/Objects.LinkFileList"]
+    outputs: ["/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/furryKids"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug","-o","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids","-module-name","furryKids","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_furryKids_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-5.5/macosx","-target","arm64-apple-macosx10.13","-Xlinker","-add_ast_path","-Xlinker","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/Modules/furryKids.swiftmodule","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.furryKids-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids-entitlement.plist"]
+    outputs: ["<furryKids-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/furryKids"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids-entitlement.plist","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids"]
+
+  "C.furryKids-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/rockenlee/WorkSpace/furryKids/Sources/main.swift","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/sources"]
+    outputs: ["/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/main.swift.o","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/Modules/furryKids.swiftmodule"]
+    description: "Compiling Swift Module 'furryKids' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","furryKids","-emit-dependencies","-emit-module","-emit-module-path","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/Modules/furryKids.swiftmodule","-output-file-map","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/output-file-map.json","-incremental","-c","@/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/sources","-I","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-enable-batch-mode","-index-store-path","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","furryKids_main","-color-diagnostics","-swift-version","6","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","furrykids"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/rockenlee/WorkSpace/furryKids/Sources/","/Users/rockenlee/WorkSpace/furryKids/Package.swift","/Users/rockenlee/WorkSpace/furryKids/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
