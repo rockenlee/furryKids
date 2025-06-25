@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  # FastAPI应用服务
+  app:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - DATABASE_URL=mysql+aiomysql://furry_user:furry_password@mysql:3306/furry_kids
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-your-secret-key-here}
+      - ENVIRONMENT=development
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - furry_network
+    restart: unless-stopped
+
+  # MySQL数据库服务
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: furry_kids
+      MYSQL_USER: furry_user
+      MYSQL_PASSWORD: furry_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql/init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+    networks:
+      - furry_network
+    restart: unless-stopped
+
+  # Redis缓存服务（为后续版本准备）
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - furry_network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  # 数据库管理工具（可选）
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    networks:
+      - furry_network
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+  redis_data:
+
+networks:
+  furry_network:
+    driver: bridge 

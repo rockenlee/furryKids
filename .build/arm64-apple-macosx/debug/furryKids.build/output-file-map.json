@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/master.swiftdeps"
+  },
+  "/Users/rockenlee/WorkSpace/furryKids/Sources/main.swift": {
+    "dependencies": "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/main.d",
+    "object": "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/main.swift.o",
+    "swiftmodule": "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/rockenlee/WorkSpace/furryKids/.build/arm64-apple-macosx/debug/furryKids.build/main.swiftdeps"
+  }
+}

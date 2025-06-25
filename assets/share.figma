@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-gray-50 justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div>
+        <div class="flex items-center bg-gray-50 p-4 pb-2 justify-between">
+          <h2 class="text-[#101618] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">毛孩子AI</h2>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-[#101618] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-[#101618]" data-icon="Plus" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-4 bg-gray-50 px-4 py-3">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-[70px] w-fit"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIlJr3gck57qmU8rjPtsp8nAnkmGgn5Hb3nOuvzURknKmZ18TXOdIOMtdPW4C4Z_EQkxr4w6IpG5Pfn2Pe4_marsuzO69I0wXuhfMj49QNSghqDSdGT0GkB9q3DuK8hZ85OHAb9G_yoDmVzLRhOBgjEWagh1-nfKHWbRcOUmiB1xsLdyRJlln9Gesiz7pVEB0pEoobdpp97sJJzkgkDuaGS_Ssjhf2KZVMGolSLg7Ajz9BzoeCXrawrt6pK8M1KnhPBujyTiX7jfM");'
+          ></div>
+          <div class="flex flex-1 flex-col justify-center">
+            <p class="text-[#101618] text-base font-medium leading-normal">小白</p>
+            <p class="text-[#5c7d8a] text-sm font-normal leading-normal">太阳很暖和</p>
+            <p class="text-[#5c7d8a] text-sm font-normal leading-normal">2024-01-01</p>
+          </div>
+        </div>
+        <div class="flex w-full grow bg-gray-50 @container py-3">
+          <div class="w-full gap-1 overflow-hidden bg-gray-50 @[480px]:gap-2 aspect-[3/2] flex">
+            <div
+              class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrZGyab82nzlTziKlRcthEvZLuXe6miKQxOKRqCTE9su1cleFdvL1-0bhgUpDUqoADH50DgvtYyzhSOmn29glNLSRtYYjfX4lP_5299-Wd53x96gwQhY9D2Ym2hvHWnpj9Ym7H8RtVfa9M9fahQ7Zyh4fnzjpStnmTaco63S-sIRSWyfVhh5SfH0gjVb7ot5rQxMNeYxKTJj1xgrwlM2ZltxveZWb_wR2wjvSlU8qRkMo1hUCYEi8y8N7p4Fb5MTY9ukeVl8K4r8k");'
+            ></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 px-4 py-2 py-2 justify-between">
+          <div class="flex items-center justify-center gap-2 px-3 py-2">
+            <div class="text-[#5c7d8a]" data-icon="Heart" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-[13px] font-bold leading-normal tracking-[0.015em]">10</p>
+          </div>
+          <div class="flex items-center justify-center gap-2 px-3 py-2">
+            <div class="text-[#5c7d8a]" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-[13px] font-bold leading-normal tracking-[0.015em]">5</p>
+          </div>
+          <div class="flex items-center justify-center gap-2 px-3 py-2">
+            <div class="text-[#5c7d8a]" data-icon="PaperPlaneTilt" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M227.32,28.68a16,16,0,0,0-15.66-4.08l-.15,0L19.57,82.84a16,16,0,0,0-2.42,29.84l85.62,40.55,40.55,85.62A15.86,15.86,0,0,0,157.74,248q.69,0,1.38-.06a15.88,15.88,0,0,0,14-11.51l58.2-191.94c0-.05,0-.1,0-.15A16,16,0,0,0,227.32,28.68ZM157.83,231.85l-.05.14L118.42,148.9l47.24-47.25a8,8,0,0,0-11.31-11.31L107.1,137.58,24,98.22l.14,0L216,40Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-[13px] font-bold leading-normal tracking-[0.015em]">2</p>
+          </div>
+        </div>
+        <div class="flex gap-4 bg-gray-50 px-4 py-3">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-[70px] w-fit"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlNKUX4YAM9iBmLucQFpCF_U2ACrdv38VUul-cEshMV-A4udX0Yl69KHPDpcXSoVLhmhZgfJcBbNRU32ZaGNlvqm9LSRDB553TH0Q3CgVqZZXcGGR9MGM5MMoxA9GvH72MkVPN8vHmH8H5rs-6AGwaC0yrsi3cbG5YK2CnGBHbboE3YFChYwmD9u-snyylbCfh2y27jLF6eiQ-_EHCEDwm1VbZDRnkO35qoc-0R70M1Q_6EOobqYC0gfFjdSl8vJMsqws_N5_twVo");'
+          ></div>
+          <div class="flex flex-1 flex-col justify-center">
+            <p class="text-[#101618] text-base font-medium leading-normal">小黑</p>
+            <p class="text-[#5c7d8a] text-sm font-normal leading-normal">天气很好</p>
+            <p class="text-[#5c7d8a] text-sm font-normal leading-normal">2024-01-02</p>
+          </div>
+        </div>
+        <div class="flex w-full grow bg-gray-50 @container py-3">
+          <div class="w-full gap-1 overflow-hidden bg-gray-50 @[480px]:gap-2 aspect-[3/2] flex">
+            <div
+              class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCS1P0tkAfUwLr2l_OkprsVzuXk0rRoJw3ANGs8AzM-pRriilv8mui2tJOsH1ypA5HpdbG_Pq64n4UFFHe2WT3H6qKgOQVeu_iCPn9lyqZjXAzOaaPpal7mvZHzh5VNiP73Ww_7RfyVtN9r75PbdpKy23S3mDmsqrpJC4ukqQouw3eAowm3NkY46-n8tVbZGh0idf_yxv9p3KGLY288gB3kM6qllKbffj-locMcHLKCIps5f7W-UnKc0y0j6IWTaHJ-7Z31lTj1tnE");'
+            ></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 px-4 py-2 py-2 justify-between">
+          <div class="flex items-center justify-center gap-2 px-3 py-2">
+            <div class="text-[#5c7d8a]" data-icon="Heart" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-[13px] font-bold leading-normal tracking-[0.015em]">15</p>
+          </div>
+          <div class="flex items-center justify-center gap-2 px-3 py-2">
+            <div class="text-[#5c7d8a]" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-[13px] font-bold leading-normal tracking-[0.015em]">8</p>
+          </div>
+          <div class="flex items-center justify-center gap-2 px-3 py-2">
+            <div class="text-[#5c7d8a]" data-icon="PaperPlaneTilt" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M227.32,28.68a16,16,0,0,0-15.66-4.08l-.15,0L19.57,82.84a16,16,0,0,0-2.42,29.84l85.62,40.55,40.55,85.62A15.86,15.86,0,0,0,157.74,248q.69,0,1.38-.06a15.88,15.88,0,0,0,14-11.51l58.2-191.94c0-.05,0-.1,0-.15A16,16,0,0,0,227.32,28.68ZM157.83,231.85l-.05.14L118.42,148.9l47.24-47.25a8,8,0,0,0-11.31-11.31L107.1,137.58,24,98.22l.14,0L216,40Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-[13px] font-bold leading-normal tracking-[0.015em]">3</p>
+          </div>
+        </div>
+        <div class="flex gap-4 bg-gray-50 px-4 py-3">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-[70px] w-fit"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYtz_VmXwSctQgad8iITJ_yeRbTuO1r1jIrBlK2zGnWXy9yXh5m1Pg-xR8UEqfE2es1QLE-zwwSqvOHI1uOy2bp78a_Tb_74bMgsd_2SyaLviJRmDk0Ic_H9ucv1JPRW8YGIYSUKdKnZgmpBNfxL5Sikxds0cqTCKdiBzvI3GcjgHfnEALuz1W0oy0CREvobQ_VDNUVTIgKveO3JQpMpRecaSEePe6QaFhQXDI3OP55mJcHqZCyExPm1ds2Yuq7Wr1AVWYcCUTb88");'
+          ></div>
+          <div class="flex flex-1 flex-col justify-center">
+            <p class="text-[#101618] text-base font-medium leading-normal">小花</p>
+            <p class="text-[#5c7d8a] text-sm font-normal leading-normal">今天很开心</p>
+            <p class="text-[#5c7d8a] text-sm font-normal leading-normal">2024-01-03</p>
+          </div>
+        </div>
+        <div class="flex w-full grow bg-gray-50 @container py-3">
+          <div class="w-full gap-1 overflow-hidden bg-gray-50 @[480px]:gap-2 aspect-[3/2] flex">
+            <div
+              class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDq4h79Kl67JBF5vOYqxDNCntiYzsVOPj8UJ0IkutZccRkM68PgGwWb2kMOKLbXH9kfDEOzl1A9dZKmlBoa-5qa976EuLShyIxEE9wPtdyX7MfIikwp9nmEIw1z8QTOx0NTNcoqvOxgcqQvlw-H67Fw_mtkkJJ8G1F6XH4W3DTiXAridxhygDeaWAlE2FnjYTRwi6Ei2BTU5dJnaLJyrgJqzO_Ts1OvCHojnnLEXS8Ond0kGnqRHia6l919Kjvwks8NaxBWuJHU_wQ");'
+            ></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 px-4 py-2 py-2 justify-between">
+          <div class="flex items-center justify-center gap-2 px-3 py-2">
+            <div class="text-[#5c7d8a]" data-icon="Heart" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-[13px] font-bold leading-normal tracking-[0.015em]">20</p>
+          </div>
+          <div class="flex items-center justify-center gap-2 px-3 py-2">
+            <div class="text-[#5c7d8a]" data-icon="ChatCircleDots" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM84,116a12,12,0,1,0,12,12A12,12,0,0,0,84,116Zm88,0a12,12,0,1,0,12,12A12,12,0,0,0,172,116Zm60,12A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-[13px] font-bold leading-normal tracking-[0.015em]">10</p>
+          </div>
+          <div class="flex items-center justify-center gap-2 px-3 py-2">
+            <div class="text-[#5c7d8a]" data-icon="PaperPlaneTilt" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M227.32,28.68a16,16,0,0,0-15.66-4.08l-.15,0L19.57,82.84a16,16,0,0,0-2.42,29.84l85.62,40.55,40.55,85.62A15.86,15.86,0,0,0,157.74,248q.69,0,1.38-.06a15.88,15.88,0,0,0,14-11.51l58.2-191.94c0-.05,0-.1,0-.15A16,16,0,0,0,227.32,28.68ZM157.83,231.85l-.05.14L118.42,148.9l47.24-47.25a8,8,0,0,0-11.31-11.31L107.1,137.58,24,98.22l.14,0L216,40Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-[13px] font-bold leading-normal tracking-[0.015em]">5</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-2 border-t border-[#eaeff1] bg-gray-50 px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#101618]" href="#">
+            <div class="text-[#101618] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#101618] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#5c7d8a]" href="#">
+            <div class="text-[#5c7d8a] flex h-8 items-center justify-center" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-xs font-medium leading-normal tracking-[0.015em]">Share</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#5c7d8a]" href="#">
+            <div class="text-[#5c7d8a] flex h-8 items-center justify-center" data-icon="PlusSquare" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Zm-32-80a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#5c7d8a] text-xs font-medium leading-normal tracking-[0.015em]">Interact</p>
+          </a>
+        </div>
+        <div class="h-5 bg-gray-50"></div>
+      </div>
+    </div>
+  </body>
+</html>

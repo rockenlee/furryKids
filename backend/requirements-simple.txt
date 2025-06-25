@@ -1,0 +1,33 @@
+# 核心框架
+fastapi
+uvicorn[standard]
+python-multipart
+
+# 数据库
+sqlalchemy
+alembic
+pymysql
+aiomysql
+
+# 认证和安全
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt
+
+# AI和机器学习
+openai
+
+# 数据验证和序列化
+pydantic
+pydantic-settings
+
+# 工具库
+python-dotenv
+loguru
+
+# HTTP客户端
+httpx
+
+# 开发工具
+pytest
+pytest-asyncio 
